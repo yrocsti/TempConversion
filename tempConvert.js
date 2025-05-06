@@ -8,36 +8,36 @@ Kelvin to Fahrenheit: F = (K-273.15) (9/5) + 32
 */
 
 // 1
-const CToK = (degree) => {
+export const CToK = (degree) => {
   return degree + 273.15;
 };
 
 // 2
-const KToC = (degree) => {
+export const KToC = (degree) => {
   return degree - 273.15;
 };
 
 // 3
-const FToC = (degree) => {
+export const FToC = (degree) => {
   return ((degree - 32) * 5) / 9;
 };
 
 // 4
-const CToF = (degree) => {
+export const CToF = (degree) => {
   return (degree * 9) / 5 + 32;
 };
 
 // 5
-const FToK = (degree) => {
+export const FToK = (degree) => {
   return ((degree - 32) * 5) / 9 + 273.15;
 };
 
 // 6
-const KToF = (degree) => {
+export const KToF = (degree) => {
   return ((degree - 273.15) * 9) / 5 + 32;
 };
 
-const convert = (num, degrees) => {
+export const convert = (num, degrees) => {
   switch (num) {
     case 1:
       return `${degrees} Celsius converted to Kelvin is ${CToK(
